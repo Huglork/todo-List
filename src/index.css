@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    background: #DCDCDC;
+}
+
+.list__item {
+    display: flex;
+    width: 25%;
+    padding: 12px 16px;
+    color: white;
+    background: #808080;
+    border-radius: 8px;
+}
+
+.trashbin {
+    background: green;
+    border-radius: 20px;
+    padding: 5px;
+    width: 24px;
+    height: 24px;
+}
+.trashbin:hover{
+    background: red;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.15);
+}
+.list__item:hover {
+    cursor: pointer;
+    background: #696969;
+    transition: all 0.5s ease-in-out;
+}
+
+.active {
+    background: rgb(44, 16, 120);
+    text-decoration-color: gray;
+    text-decoration: line-through;
+}
